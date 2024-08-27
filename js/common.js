@@ -8,7 +8,7 @@ const preventDefaultAnchor = () => {
     });
 };
 
-// ê³µí†µìœ¼ë¡œ ë“¤ì–´ê°€ëŠ” ë‚´ìš©ì„ ì„±ê²©ë³„ë¡œ í•¨ìˆ˜ë¡œ ë§Œë“¤ê¸°
+// °øÅëÀ¸·Î µé¾î°¡´Â ³»¿ëÀ» ¼º°İº°·Î ÇÔ¼ö·Î ¸¸µé±â
 const navi = () => {
     let header = get('#header');
     let nav = get('#header .nav');

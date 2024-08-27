@@ -1,6 +1,6 @@
-//ë¹„ì£¼ì–¼ë°°ë„ˆ
+//ºñÁÖ¾ó¹è³Ê
 const mainBanner = () => {};
-//ì´ë²¤íŠ¸ë°°ë„ˆ
+//ÀÌº¥Æ®¹è³Ê
 const eventBanner = () => { };
 
 // intro()
@@ -32,7 +32,7 @@ const eventBanner = () => { };
 //     }, 7000);
 // };
 
-//í•©ì¹˜ê¸°
+//ÇÕÄ¡±â
 const mainInit = () => {
     mainBanner();
     eventBanner();
@@ -142,20 +142,20 @@ const sec3Banner = () => {
                 let friend2 = friend + num;
                 friend2 = friend2 > 3 ? 0 : friend2 < 0 ? 3 : friend2;
 
-                // ì²«ë²ˆì§¸ê°€ ë§¨ ë’¤ë¡œ ê°€ëŠ”,
+                // Ã¹¹øÂ°°¡ ¸Ç µÚ·Î °¡´Â,
                 $bannerli.forEach((li, idx) => {
                     li.style.transition = '0.4s';
                 });
                 $bannerli[old].style.transition = '0s';
                 $bannerli[old].style.left = `100%`;
-                // ë‹¤ìŒêº¼ê°€ ì•žìœ¼ë¡œ ë‚˜ì˜¤ëŠ” ë¶€ë¶„
+                // ´ÙÀ½²¨°¡ ¾ÕÀ¸·Î ³ª¿À´Â ºÎºÐ
                 $bannerli[current].style.zIndex = '1';
                 $bannerli[current].style.left = '0px';
                 $bannerli[current].style.transition = '0.4s';
 
                 $bannerli[old].style.zIndex = '1';
 
-                // ë°°ë„ˆë“¤ ê°ìž ìœ„ì¹˜ì— ë§žê²Œ ì„¤ì •
+                // ¹è³Êµé °¢ÀÚ À§Ä¡¿¡ ¸Â°Ô ¼³Á¤
                 $bannerli[friend].style.left = `${(liWidth + 64) * ($bannerli.length - 3)}px`;
                 $bannerli[friend2].style.left = `${(liWidth + 64) * ($bannerli.length - 2)}px`;
                 $bannerli[old].style.left = `${(liWidth + 64) * ($bannerli.length - 1)}px`;
@@ -173,13 +173,13 @@ const sec3Banner = () => {
         let friend2 = friend + num;
         friend2 = friend2 > 3 ? 0 : friend2 < 0 ? 3 : friend2;
 
-        // ì²«ë²ˆì§¸ê°€ ë§¨ ë’¤ë¡œ ê°€ëŠ”,
+        // Ã¹¹øÂ°°¡ ¸Ç µÚ·Î °¡´Â,
         $bannerli.forEach((li, idx) => {
             li.style.transition = '0.4s';
         });
         $bannerli[current].style.transition = '0s';
         $bannerli[current].style.left = `100%`;
-        // ë‹¤ìŒêº¼ê°€ ì•žìœ¼ë¡œ ë‚˜ì˜¤ëŠ” ë¶€ë¶„
+        // ´ÙÀ½²¨°¡ ¾ÕÀ¸·Î ³ª¿À´Â ºÎºÐ
         $bannerli[old].style.zIndex = '1';
         $bannerli[old].style.left = `${(liWidth + 64) * ($bannerli.length - 3)}px`;
         $bannerli[old].style.transition = '0.4s';
@@ -237,21 +237,21 @@ const sec4Bannerl = () => {
         let num = txt === 'next' ? +1 : -1;
         
         setTimeout(() => {
-            // ì´ê±°ëŠ” ì „ ë²„íŠ¼ ëˆŒë €ì„ ê²½ìš°ìž„
+            // ÀÌ°Å´Â Àü ¹öÆ° ´­·¶À» °æ¿ìÀÓ
             if (num === -1) {
                 let friend = current + num
                 friend = friend > 3 ? 0 : friend < 0 ? 3 : friend;
                 let friend2 = friend + num;
                 friend2 = friend2 > 3 ? 0 : friend2 < 0 ? 3 : friend2;
 
-                // ì²«ë²ˆì§¸ê°€ ë§¨ ë’¤ë¡œ ê°€ëŠ”,           
+                // Ã¹¹øÂ°°¡ ¸Ç µÚ·Î °¡´Â,           
                 $bannerli.forEach((li, idx) => {
                     li.style.transition = '0.4s'
                     li.classList.remove('active')
                 });
                 $bannerli[old].style.transition = '0s';
                 $bannerli[old].style.left = `100%`;
-                // ë‹¤ìŒêº¼ê°€ ì•žìœ¼ë¡œ ë‚˜ì˜¤ëŠ” ë¶€ë¶„
+                // ´ÙÀ½²¨°¡ ¾ÕÀ¸·Î ³ª¿À´Â ºÎºÐ
                 $bannerli[current].style.zIndex = '1';
                 $bannerli[current].style.left = '0px';
                 $bannerli[current].style.transition = '0.4s';
@@ -259,7 +259,7 @@ const sec4Bannerl = () => {
                 
                 $bannerli[old].style.zIndex = '1';
                 
-                // ë°°ë„ˆë“¤ ê°ìž ìœ„ì¹˜ì— ë§žê²Œ ì„¤ì •
+                // ¹è³Êµé °¢ÀÚ À§Ä¡¿¡ ¸Â°Ô ¼³Á¤
                 $bannerli[friend].style.left = `${(liWidth + 23) * ($bannerli.length - 3)}px`;
                 $bannerli[friend2].style.left = `${(liWidth + 23) * ($bannerli.length - 2) }px`;
                 $bannerli[old].style.left = `${(liWidth + 23) * ($bannerli.length - 1)}px`;
@@ -280,14 +280,14 @@ const sec4Bannerl = () => {
         let friend2 = friend + num;
         friend2 = friend2 > 3 ? 0 : friend2 < 0 ? 3 : friend2;
 
-        // ì²«ë²ˆì§¸ê°€ ë§¨ ë’¤ë¡œ ê°€ëŠ”,
+        // Ã¹¹øÂ°°¡ ¸Ç µÚ·Î °¡´Â,
         $bannerli.forEach((li, idx) => {
             li.style.transition = '0.4s';
             li.classList.remove('active')
         });
         $bannerli[current].style.transition = '0s';
         $bannerli[current].style.left = `100%`;
-        // ë‹¤ìŒêº¼ê°€ ì•žìœ¼ë¡œ ë‚˜ì˜¤ëŠ” ë¶€ë¶„
+        // ´ÙÀ½²¨°¡ ¾ÕÀ¸·Î ³ª¿À´Â ºÎºÐ
         $bannerli[old].style.zIndex = '1';
         $bannerli[old].style.left = `${(liWidth + 23) * ($bannerli.length - 3)}px`;
         $bannerli[old].style.transition = '0.4s';
@@ -298,7 +298,7 @@ const sec4Bannerl = () => {
         $bannerli[friend2].style.left = `${(liWidth + 23) * ($bannerli.length - 1)}px`;
         $bannerli[current].style.left = `${(liWidth + 23) * 0}px`;
 
-        // ì²«ë²ˆì§¸ ìžë¦¬ë¡œ ê°€ì•¼í•¨
+        // Ã¹¹øÂ° ÀÚ¸®·Î °¡¾ßÇÔ
         $bannerli[current].classList.add('active');
 
         // $bannerli[current].classList.remove('active');
@@ -357,7 +357,7 @@ const ani = () => {
             });
         },
         {
-            root: null, // ê¸°ë³¸ ë·°í¬íŠ¸
+            root: null, // ±âº» ºäÆ÷Æ®
             rootMargin: '0px',
             threshold: 0.1,
         }
@@ -368,7 +368,7 @@ const ani = () => {
     observer.observe(target);
     observer.observe(con4bg);
 
-    // ì™¼ìª½ì—ì„œ ë‚˜ì˜¤ëŠ” ì´ë²¤íŠ¸
+    // ¿ÞÂÊ¿¡¼­ ³ª¿À´Â ÀÌº¥Æ®
     let leftobserver = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
@@ -408,7 +408,7 @@ const ani = () => {
                         entry.target.classList.add('left-ani');
                     }, 500); 
                 } else {
-                    // í´ëž˜ìŠ¤ ì¶”ê°€ì— ì§€ì—° ì¶”ê°€
+                    // Å¬·¡½º Ãß°¡¿¡ Áö¿¬ Ãß°¡
                     setTimeout(() => {
                         entry.target.classList.remove('left-ani');
                     }, 500); 

@@ -77,34 +77,32 @@
 }
 
 /*회원가입 페이지*/
-.join .login-wrap{}
-.join .login-wrap:nth-child(1) div{}
 .join .login-wrap:nth-child(1) div h1{display: inline;}
-.join .login-wrap:nth-child(1) div h2{display: inline; float: right; font-size: 32px; font-weight: 700;}
-.join .login-wrap:nth-child(1) form{margin-top: 55px;}
-.join .login-wrap:nth-child(1) form .checkID{padding: 21px 45px; border: none; background: black; color: white; border-radius: 8px; margin-left: 22px;} 
+.join .login-wrap:nth-child(1) div h2{display: inline; float: right; font-size: 1.6667vw; font-weight: 700;}
+.join .login-wrap:nth-child(1) form{margin-top: 2.8646vw;}
+.join .login-wrap:nth-child(1) form .checkID{padding: 1.0938vw 2.3438vw; border: none; background: black; color: white; border-radius: 0.4167vw; margin-left: 1.1458vw;} 
 .join .login-wrap form input{width: 100%;}
 .join .login-wrap:nth-child(1) form #makeID{width: 77%;}
-.join .login-wrap:nth-child(1) form #newpassword {margin-top: 18px; border-radius: 8px 8px 0px 0px;}
-.join .login-wrap:nth-child(1) form #checkpassword {border-radius: 0px 0px 8px 8px; }
-.join .login-wrap:nth-child(1) form .name{margin-top: 18px; border-radius: 8px 8px 0px 0px;}
+.join .login-wrap:nth-child(1) form #newpassword {margin-top: 0.9375vw; border-radius: 0.4167vw 0.4167vw 0px 0px;}
+.join .login-wrap:nth-child(1) form #checkpassword {border-radius: 0px 0px 0.4167vw 0.4167vw; }
+.join .login-wrap:nth-child(1) form .name{margin-top: 0.9375vw; border-radius: 0.4167vw 0.4167vw 0px 0px;}
 .join .login-wrap:nth-child(1) form .phonenum{border-radius: 0;}
-.join .login-wrap:nth-child(1) form .email{margin-top: 18px; border-radius: 0px 0px 0px 0px;}
-.join .login-wrap:nth-child(1) form input:nth-child(9){border-radius: 0px 0px 8px 8px;}
+.join .login-wrap:nth-child(1) form .email{margin-top: 0.9375vw; border-radius: 0px 0px 0px 0px;}
+.join .login-wrap:nth-child(1) form input:nth-child(9){border-radius: 0px 0px 0.4167vw 0.4167vw;}
 .join .login-wrap:nth-child(1) form ul li input.blind{display: none;}
-.join .login-wrap:nth-child(1) #identyGender-wrap{flex-basis: 50%; justify-content: center; align-content: center; height: 44px;}
+.join .login-wrap:nth-child(1) #identyGender-wrap{flex-basis: 50%; justify-content: center; align-content: center; height: 2.2917vw;}
 .join .login-wrap:nth-child(1) #identyGender-wrap li{align-content: center; text-align: center;}
-.join .login-wrap:nth-child(1) #identyforeign-wrap{flex-basis: 50%; justify-content: center; align-content: center; height: 44px;}
+.join .login-wrap:nth-child(1) #identyforeign-wrap{flex-basis: 50%; justify-content: center; align-content: center; height: 2.2917vw;}
 .join .login-wrap:nth-child(1) #identyforeign-wrap li{align-content: center; text-align: center;}
 .join .login-wrap:nth-child(1) ul li{flex-basis: 50%;}
-.join .login-wrap:nth-child(1) #identyforeign{flex-basis: 50%; border: 1px solid var(--gray); border-radius: 8px;}
+.join .login-wrap:nth-child(1) #identyforeign{flex-basis: 50%; border: 1px solid var(--gray); border-radius: 0.4167vw;}
 .join .login-wrap:nth-child(1) form .input-box{    
     display: flex;
     height: 3.6458vw;
-    padding: 12px 22px;
+    padding: 0.6250vw 1.1458vw;
     border: 0.0521vw solid var(--gray);
-    gap: 24px;
-    height: 69px;
+    gap: 1.25vw;
+    height: 3.5938vw;
     box-sizing: border-box;
 }
 .join .login-wrap:nth-child(1) form .input-box ul{display: flex;}
@@ -112,55 +110,59 @@
     content: '';
     display: block;
     height: 1px;
-    width: 723px;
+    width: 37.6563vw;
     background: var(--gray);
     position: absolute;
-    top: -45px;
+    top: -2.3438vw;
     right: 0;
-    transform: translateX(208px);
+    transform: translateX(10.8333vw);
 }
 .join .login-wrap:nth-child(1) form button[type = "submit"]{
     background-color: #000;
     color: white;
-    padding:  20px 126px;
+    padding:  1.0417vw 6.5625vw;
     border-radius: 0.4167vw;
     border: none;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 4.6875vw;
     display: block;
     position: relative;
 }
 
-
-/* 라디오박스 디자인 */
-label{
+.join label{
     display: flex;
     align-items: center;
     justify-content: center;
 }
   
-  /* 체크박스 디자인 */
-label::before{
+/* 체크박스 디자인 */
+.join label::before{
     content:'';
     display: block;
-    margin-right: 5px;
+    margin-right: 0.2604vw;
     display: inline-block;
-    width: 15px;
-    height: 44px;
+    width: 0.7813vw;
+    height: 2.2917vw;
     background-color: transparent;
     border: 1px solid #9da3a5;
     box-sizing:border-box;
     position: relative;
     cursor: pointer;
-  }
-label:nth-child(1):before , label:nth-child(3):before {
-    width: 190px;
-    height: 44px;
+    width: 9.8958vw;
+    height: 2.2917vw;
     position: absolute;
+  }
+.join #identyGender-wrap li:first-of-type label::before , 
+.join #identyforeign-wrap li:first-of-type label::before{
+    border-radius: 0.4167vw 0px 0px 0.4167vw;
+}
+.join #identyGender-wrap li:nth-of-type(2) label::before , 
+.join #identyforeign-wrap li:nth-of-type(2) label::before{
+    border-radius: 0px 0.4167vw 0.4167vw 0px;
 }
   
-  /* checked */
-input:checked + label::before{
+/* checked */
+.join input:checked + label::before{
     border:1px solid black;
     color: black;
   }
