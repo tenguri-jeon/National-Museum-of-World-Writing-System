@@ -1,0 +1,166 @@
+:root{
+    --gray : #E6E6E6;
+}
+#join_Membership{
+    background: url(../images/join_Membership_bg.png) no-repeat center / cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.join_Membershipbox{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background: #fff;
+    padding: 5vw 3.3333vw;
+}
+.login .login-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login .login-wrap form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.3333vw;
+}
+.login .login-wrap form{}
+.login-wrap form input{
+    border-radius: 0.5208vw;
+    width: 22.9167vw;
+    height: 3.6458vw;
+    padding: 1.2500vw 1.8750vw;
+    border: 0.0521vw solid var(--gray);
+}
+.login .login-wrap form input:nth-child(1){
+    margin-bottom: 0.9375vw;
+}
+.login .login-wrap form .link_wrap::before{
+    content: '';
+    height: 0.0521vw;
+    width: 100%;
+    display: block;
+    background: #E7E7E7;
+    position: absolute;
+    top: 1.3542vw;
+    right: 0;
+}
+.login .login-wrap form .link_wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 2.6042vw;
+    padding-top: 2.8125vw
+}
+.login .login-wrap form .link_wrap a{ color: #4F4F4F; position: relative;}
+.login .login-wrap form .link_wrap a::after{ 
+    content: '';
+    height: 0.9375vw;
+    width: 0.0521vw;
+    display: block;
+    background: #E7E7E7;
+    position: absolute;
+    top: 0.2604vw;
+    right: -1.3021vw
+}
+.login .login-wrap form .link_wrap a:last-child::after{
+    display: none;
+}
+.login .login-wrap form button{
+    background-color: #000;
+    color: white;
+    padding: 1.0417vw 6.8750vw;
+    border-radius: 0.4167vw;
+    border: none;
+    margin-top: 2.8646vw
+}
+
+/*회원가입 페이지*/
+.join .login-wrap{}
+.join .login-wrap:nth-child(1) div{}
+.join .login-wrap:nth-child(1) div h1{display: inline;}
+.join .login-wrap:nth-child(1) div h2{display: inline; float: right; font-size: 32px; font-weight: 700;}
+.join .login-wrap:nth-child(1) form{margin-top: 55px;}
+.join .login-wrap:nth-child(1) form .checkID{padding: 21px 45px; border: none; background: black; color: white; border-radius: 8px; margin-left: 22px;} 
+.join .login-wrap form input{width: 100%;}
+.join .login-wrap:nth-child(1) form #makeID{width: 77%;}
+.join .login-wrap:nth-child(1) form #newpassword {margin-top: 18px; border-radius: 8px 8px 0px 0px;}
+.join .login-wrap:nth-child(1) form #checkpassword {border-radius: 0px 0px 8px 8px; }
+.join .login-wrap:nth-child(1) form .name{margin-top: 18px; border-radius: 8px 8px 0px 0px;}
+.join .login-wrap:nth-child(1) form .phonenum{border-radius: 0;}
+.join .login-wrap:nth-child(1) form .email{margin-top: 18px; border-radius: 0px 0px 0px 0px;}
+.join .login-wrap:nth-child(1) form input:nth-child(9){border-radius: 0px 0px 8px 8px;}
+.join .login-wrap:nth-child(1) form ul li input.blind{display: none;}
+.join .login-wrap:nth-child(1) #identyGender-wrap{flex-basis: 50%; justify-content: center; align-content: center; height: 44px;}
+.join .login-wrap:nth-child(1) #identyGender-wrap li{align-content: center; text-align: center;}
+.join .login-wrap:nth-child(1) #identyforeign-wrap{flex-basis: 50%; justify-content: center; align-content: center; height: 44px;}
+.join .login-wrap:nth-child(1) #identyforeign-wrap li{align-content: center; text-align: center;}
+.join .login-wrap:nth-child(1) ul li{flex-basis: 50%;}
+.join .login-wrap:nth-child(1) #identyforeign{flex-basis: 50%; border: 1px solid var(--gray); border-radius: 8px;}
+.join .login-wrap:nth-child(1) form .input-box{    
+    display: flex;
+    height: 3.6458vw;
+    padding: 12px 22px;
+    border: 0.0521vw solid var(--gray);
+    gap: 24px;
+    height: 69px;
+    box-sizing: border-box;
+}
+.join .login-wrap:nth-child(1) form .input-box ul{display: flex;}
+.join .login-wrap:nth-child(1) form button[type = "submit"]::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 723px;
+    background: var(--gray);
+    position: absolute;
+    top: -45px;
+    right: 0;
+    transform: translateX(208px);
+}
+.join .login-wrap:nth-child(1) form button[type = "submit"]{
+    background-color: #000;
+    color: white;
+    padding:  20px 126px;
+    border-radius: 0.4167vw;
+    border: none;
+    margin: 0 auto;
+    margin-top: 90px;
+    display: block;
+    position: relative;
+}
+
+
+/* 라디오박스 디자인 */
+label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  /* 체크박스 디자인 */
+label::before{
+    content:'';
+    display: block;
+    margin-right: 5px;
+    display: inline-block;
+    width: 15px;
+    height: 44px;
+    background-color: transparent;
+    border: 1px solid #9da3a5;
+    box-sizing:border-box;
+    position: relative;
+    cursor: pointer;
+  }
+label:nth-child(1):before , label:nth-child(3):before {
+    width: 190px;
+    height: 44px;
+    position: absolute;
+}
+  
+  /* checked */
+input:checked + label::before{
+    border:1px solid black;
+    color: black;
+  }
