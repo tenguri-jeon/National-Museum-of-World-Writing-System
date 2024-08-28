@@ -3,35 +3,6 @@ const mainBanner = () => {};
 //이벤트배너
 const eventBanner = () => { };
 
-// intro()
-// const intro = () => {
-//     const $span = getAll('#intro div span');
-//     const $img = get('#intro img')
-//     const $intro = get('#intro')
-//     let interval = 300;
-//     let cnt = 0
-//     $span.forEach((item, idx) => {
-//         item.style.transform = `translateX(-2500px)`;
-//         $span[1].style.transform = `translateX(2500px)`;
-//         item.style.opacity = `0`;
-//     });
-//     let timer = setInterval(() => {
-//         cnt++
-//         if (cnt < 10) {
-//             $img.setAttribute('src', `images/main_intro${cnt}.png`);
-//         } else if (cnt === 9) {
-//             clearInterval(timer)
-//         }
-//         else {
-//             clearInterval(timer)
-//         }
-//     }, interval);
-
-//     setTimeout(() => {
-//         $intro.style.display = 'none'
-//     }, 7000);
-// };
-
 //합치기
 const mainInit = () => {
     mainBanner();
@@ -237,7 +208,6 @@ const sec4Bannerl = () => {
         let num = txt === 'next' ? +1 : -1;
         
         setTimeout(() => {
-            // 이거는 전 버튼 눌렀을 경우임
             if (num === -1) {
                 let friend = current + num
                 friend = friend > 3 ? 0 : friend < 0 ? 3 : friend;
@@ -357,7 +327,7 @@ const ani = () => {
             });
         },
         {
-            root: null, // 기본 뷰포트
+            root: null, 
             rootMargin: '0px',
             threshold: 0.1,
         }
@@ -440,6 +410,5 @@ const ani = () => {
     mainVisual();
     mainInit();
     sec4Bannerl()
-    // intro()
     ani()
 })();

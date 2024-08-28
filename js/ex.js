@@ -33,8 +33,8 @@ const searchInput = document.querySelector('.searchInput')
 
 data.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-let currentPage = 1; // 전역 변수로 선언
-let pageCount = 10; // 페이지당 항목 수
+let currentPage = 1; 
+let pageCount = 10;
 
 searchBtn.addEventListener('click' , e=> {
     console.log(searchInput.value)
