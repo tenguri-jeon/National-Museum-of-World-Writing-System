@@ -30,6 +30,7 @@ const change = document.querySelector('#change')
 const add = document.querySelector('.add')
 const searchBtn = document.querySelector('.search-bar')
 const searchInput = document.querySelector('.searchInput')
+const searchSel = document.querySelector('#search')
 
 data.sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -37,19 +38,46 @@ let currentPage = 1;
 let pageCount = 10;
 
 searchBtn.addEventListener('click' , e=> {
-    console.log(searchInput.value)
-    data.forEach((item , idx) =>{
-        let result = item.filter((value) => value.title)
-    })
+    let inpVal = searchInput.value
+    let arr = []
+    switch (searchSel.value) {
+        case '제목':
+            data.map((item ,idx) =>{
+                if (item.title.includes(inpVal) || item.author.includes(inpVal)) {
+                    return (arr = arr.concat(data[idx]))
+                }
+            })
+            renderPagination(currentPage , pageCount , arr)
+            break;
+        case '제목':
+            data.map((item ,idx) =>{
+                if (item.title.includes(inpVal)) {
+                    return (arr = arr.concat(data[idx]))
+                }
+            })
+            renderPagination(currentPage , pageCount , arr)
+            break;
+        case '부서':
+            data.map((item ,idx) =>{
+                if (item.author.includes(inpVal)) {
+                    return (arr = arr.concat(data[idx]))
+                }
+            })
+            renderPagination(currentPage , pageCount , arr)
+            break;
+        default:
+            break;
+    }
+
 })
 
 add.addEventListener('click' , e => {
     pageCount = Number(change.value)
-    renderPagination(currentPage , pageCount)
+    renderPagination(currentPage , pageCount, data)
 })
 
 
-function renderPagination(currentPage , pageCount) {
+function renderPagination(currentPage , pageCount , data) {
     const totalCount = data.length;
     const pageGroup = Math.ceil(totalCount / pageCount);
 
@@ -63,13 +91,13 @@ function renderPagination(currentPage , pageCount) {
     document.querySelectorAll('.pageNumber').forEach(button => {
         button.addEventListener('click', () => {
             currentPage = Number(button.id.split('_')[1]);
-            updateList(currentPage , pageCount);
+            updateList(currentPage , pageCount , data);
         });
     });
-    updateList(currentPage , pageCount);
+    updateList(currentPage , pageCount , data);
 }
 
-function updateList(currentPage , pageCount) {
+function updateList(currentPage , pageCount , data) {
     let pageNum = (currentPage - 1) * pageCount;
     let listHTML = '';
 
@@ -91,4 +119,4 @@ function updateList(currentPage , pageCount) {
 }
 
 // 초기 페이지네이션 렌더링
-renderPagination(currentPage , pageCount);
+renderPagination(currentPage , pageCount , data);

@@ -27,7 +27,20 @@ const mainVisual = () => {
                 banner()
             },interval)
         })
+        btn.addEventListener('keydown' , (e) => {
+            if (e.keyCode === 13) {
+                clearInterval(timer)
+                current = idx;
+                banner();
+                timer = setInterval(() => {
+                    current = current >= totalImage - 1 ? 0 : current + 1;
+                    banner()
+                },interval)
+            }
+        })
     })
+
+
             
     timer = setInterval(() => {
         current = current >= totalImage - 1 ? 0 : current + 1;
@@ -84,6 +97,18 @@ const sec3Banner = () => {
        banner('next') 
     }, interval);
 
+    // tab 키 접근성 준수를 위한 이벤트 발생
+    $next.addEventListener('keydown', (e) => {
+        if (e.keyCode === 13) {
+            clearInterval(timer)
+            current = current <= 0 ? totalImage - 1 : current - 1;
+            banner('next');
+            timer = setInterval(() => {
+                current = current <= 0 ? totalImage - 1 : current - 1;
+                banner('next') 
+            }, interval);        
+        }
+    })
     $next.addEventListener('click', (e) => {
         clearInterval(timer)
         current = current <= 0 ? totalImage - 1 : current - 1;
@@ -93,6 +118,18 @@ const sec3Banner = () => {
             banner('next') 
         }, interval);        
     });
+    // tab 키 접근성 준수를 위한 이벤트 발생
+    $prev.addEventListener('keydown', (e) => {
+        if (e.keyCode === 13) {
+            clearInterval(timer);
+            current = current <= 0 ? totalImage - 1 : current - 1;
+            banner('prev');
+            timer = setInterval(() => {
+                current = current <= 0 ? totalImage - 1 : current - 1;
+                banner('next') 
+            }, interval);          
+        }
+    })
     $prev.addEventListener('click', (e) => {
         clearInterval(timer);
         current = current <= 0 ? totalImage - 1 : current - 1;
@@ -184,6 +221,17 @@ const sec4Bannerl = () => {
         banner('prev')
     }, interval);
 
+    $next.addEventListener('keydown', (e) => {
+        if (e.keyCode === 13) {
+            clearInterval(timer)
+            current = current <= 0 ? totalImage - 1 : current - 1;
+            banner('next');
+            timer = setInterval(() => {
+                current = current <= 0 ? totalImage - 1 : current - 1;
+                banner('next');
+            }, interval);
+        }
+    });
     $next.addEventListener('click', (e) => {
         clearInterval(timer)
         current = current <= 0 ? totalImage - 1 : current - 1;
@@ -193,6 +241,17 @@ const sec4Bannerl = () => {
             banner('next');
         }, interval);
 
+    });
+    $prev.addEventListener('keydown', (e) => {
+        if (e.keyCode === 13) {
+            clearInterval(timer)
+            current = current <= 0 ? totalImage - 1 : current - 1;
+            banner('prev');
+            timer = setInterval(() => {
+                current = current <= 0 ? totalImage - 1 : current - 1;
+                banner('next');
+            }, interval);
+        }
     });
     $prev.addEventListener('click', (e) => {
         clearInterval(timer)
