@@ -273,7 +273,7 @@
     top: calc(50% - 5px);
     width: 15px;
     height: 12px;
-    background: url(/images/sub_images/sub2_link.svg);
+    background: url(images/sub_images/sub2_link.svg);
 }
 
 #exhibition .aos_wrap .intro_box .layout .motionbox .intro_map {
