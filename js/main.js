@@ -304,25 +304,25 @@ const sec4Bannerl = () => {
     switch (className.slice(11, 12)) {
       case "1":
         $bg.style.background =
-          "url(../images/main/main_sec4_Bimg1.png) no-repeat center / cover";
+          "url(images/main/main_sec4_Bimg1.png) no-repeat center / cover";
         $bg.animate([{ opacity: 0.8 }, { opacity: 1 }], 500);
         $bannertxt[0].classList.add("active");
         break;
       case "2":
         $bg.style.background =
-          "url(../images/main/main_sec4_Bimg2.png) no-repeat center / cover";
+          "url(images/main/main_sec4_Bimg2.png) no-repeat center / cover";
         $bg.animate([{ opacity: 0.8 }, { opacity: 1 }], 500);
         $bannertxt[1].classList.add("active");
         break;
       case "3":
         $bg.style.background =
-          "url(../images/main/main_sec4_Bimg3.png) no-repeat center / cover";
+          "url(images/main/main_sec4_Bimg3.png) no-repeat center / cover";
         $bg.animate([{ opacity: 0.8 }, { opacity: 1 }], 500);
         $bannertxt[2].classList.add("active");
         break;
       case "4":
         $bg.style.background =
-          "url(../images/main/main_sec4_Bimg4.png) no-repeat center / cover";
+          "url(images/main/main_sec4_Bimg4.png) no-repeat center / cover";
         $bg.animate([{ opacity: 0.8 }, { opacity: 1 }], 500);
         $bannertxt[3].classList.add("active");
         break;

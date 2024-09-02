@@ -329,7 +329,7 @@ select option {
 #subVisual .share .sns_wrap .sns_inner .sns_close {
     background-color: #fff;
     background-size: 14px 14px;
-    background-image: url(/images/common/utlie_sns2.svg);
+    background-image: url(../images/common/utlie_sns2.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     position: absolute;
@@ -339,37 +339,37 @@ select option {
     border-radius: 50%;
 }
 #subVisual .share .sns_wrap .sns_inner .sns_copy {
-    background-image: url(/images/common/utlie_sns3.svg);
+    background-image: url(../images/common/utlie_sns3.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 23px 23px;
 }
 #subVisual .share .sns_wrap .sns_inner .sns_facebook {
-    background-image: url(/images/common/utlie_sns4.svg);
+    background-image: url(../images/common/utlie_sns4.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 23px 23px;
 }
 #subVisual .share .sns_wrap .sns_inner .sns_twitter {
-    background-image: url(/images/common/utlie_sns5.svg);
+    background-image: url(../images/common/utlie_sns5.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 23px 23px;
 }
 #subVisual .share .sns_wrap .sns_inner .sns_blog {
-    background-image: url(/images/common/utlie_sns6.svg);
+    background-image: url(../images/common/utlie_sns6.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 23px 23px;
 }
 #subVisual .share .sns_wrap .sns_inner .sns_band {
-    background-image: url(/images/common/utlie_sns7.svg);
+    background-image: url(../images/common/utlie_sns7.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 23px 23px;
 }
 #subVisual .share .sns_wrap .sns_inner .sns_kakao {
-    background-image: url(/images/common/utlie_sns1.svg);
+    background-image: url(../images/common/utlie_sns1.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 23px 23px;
