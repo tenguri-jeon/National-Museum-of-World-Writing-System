@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>소식·참여 > 보도자료</title>
+        <meta name="title" content="" />
+        <meta name="robots" content="index,follow" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="copyright" content="" />
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="logo.png" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/subpage.css" />
+
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    </head>
+    <body>
+        <p id="skipNav"><a href="#content">본문바로가기</a></p>
+        <div id="wrap">
+            <header id="header">
+                <!-- 추가 -->
+            </header>
+            <!-- //header -->
+
+            <section id="subVisual" class="banner1">
+                <div class="inner">
+                    <h2>보도자료</h2>
+                    <ul class="location">
+                        <li>
+                            <a href="/main.html"
+                                ><img src="images/sub_images/home.svg" alt="메인"
+                            /></a>
+                        </li>
+                        <li><a href="#">소식 · 참여</a></li>
+                        <li class="on"><a href="#">보도자료</a></li>
+                    </ul>
+                    <ul class="share">
+                        <li>
+                            <img src="images/sub_images/share.svg" alt="sns" />
+                            <div class="sns_wrap">
+                                <div class="sns_inner">
+                                    <button class="sns_close"></button>
+                                    <a href="#" onclick="clip(); return false"
+                                        ><button class="sns_copy"></button
+                                    ></a>
+                                    <button
+                                        class="sns_facebook"
+                                        onclick="window.open('https://www.facebook.com/share_channel/?link=https%3A%2F%2Fwww.mow.or.kr%2Fkor%2Fsub03_01.do&app_id=966242223397117&source_surface=external_reshare&display&hashtag','window_name','width=750,height=500,location=no,status=no,scrollbars=yes');"
+                                    ></button>
+                                    <button
+                                        class="sns_twitter"
+                                        onclick="window.open('https://x.com/?logout=1725007460975','window_name','width=750,height=500,location=no,status=no,scrollbars=yes');"
+                                    ></button>
+                                    <button
+                                        class="sns_blog"
+                                        onclick="window.open('https://share.naver.com/web/shareView.nhn?url=https%3A%2F%2Fwww.mow.or.kr%2Fkor%2Fsub03_01.do&title=%EB%84%A4%EC%9D%B4%EB%B2%84%20SNS%EA%B3%B5%EC%9C%A0','window_name','width=750,height=500,location=no,status=no,scrollbars=yes');"
+                                    ></button>
+                                    <button
+                                        class="sns_band"
+                                        onclick="window.open('https://auth.band.us/login_page?display=popup&next_url=https%3A%2F%2Fband.us%2Fplugin%2Fshare%3Fbody%3D%25EB%2584%25A4%25EC%259D%25B4%25EB%25B2%2584%25EB%25B0%25B4%25EB%2593%259C%2520SNS%25EA%25B3%25B5%25EC%259C%25A0%250Ahttps%253A%252F%252Fwww.mow.or.kr%252Fkor%252Fsub03_01.do','window_name','width=750,height=500,location=no,status=no,scrollbars=yes');"
+                                    ></button>
+                                    <button
+                                        class="sns_kakao"
+                                        onclick="window.open('https://accounts.kakao.com/login/?continue=https%3A%2F%2Fsharer.kakao.com%2Fpicker%2Flink%3Fapp_key%3Dbc03adc04fabab905bf2b42e775535c1%26short_key%3D903c57cb-7add-42c4-bf05-883a61df0b3a#login','window_name','width=750,height=500,location=no,status=no,scrollbars=yes');"
+                                    ></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li><img src="images/sub_images/print.svg" alt="print" /></li>
+                    </ul>
+                </div>
+            </section>
+
+            <main id="container" class="page news">
+                <section id="content news">
+                    <div class="inner">
+                        <div class="top-bar">
+                            <p>
+                                총 게시물 <strong class="total">00</strong> , 페이지
+                                <strong class="current">0</strong>/ <span>0</span>
+                            </p>
+                            <div class="search">
+                                <select id="category">
+                                    <option value="전체">:::전체:::</option>
+                                    <option value="제목">제목</option>
+                                    <option value="부서명">부서명</option>
+                                </select>
+                                <input type="text" placeholder="검색어를 입력해 주세요" />
+                                <button class="searchBtn">검색</button>
+                                <select id="view">
+                                    <option>10</option>
+                                    <option>20</option>
+                                </select>
+                                <button class="viewBtn">적용</button>
+                            </div>
+                        </div>
+
+                        <table class="news-table">
+                            <caption class="hide">
+                                보도자료입니다.
+                            </caption>
+                            <colgroup>
+                                <col class="id" />
+                                <col class="title" />
+                                <col class="author" />
+                                <col class="hit" />
+                                <col class="date" />
+                                <col class="atch" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>조회수</th>
+                                    <th>등록일</th>
+                                    <th>첨부파일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- tbody -->
+                            </tbody>
+                        </table>
+                        <p class="paging">
+                            <!-- pagination -->
+                        </p>
+                        <div class="info">
+                            <p><span>담당부서</span>기획운영부</p>
+                            <p><span>담당자</span>기획운영부</p>
+                            <p><span>대표번호</span>032-290-2000</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- //main -->
+
+            <footer id="footer">
+                <!-- 추가 -->
+            </footer>
+        </div>
+
+        <script src="js/common.js"></script>
+        <script type="module" src="js/sub.js"></script>
+    </body>
+</html>

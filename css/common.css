@@ -1,5 +1,5 @@
-:root{
-    --main-black : #0A0A0A;
+:root {
+    --main-black: #0a0a0a;
 }
 
 /* main header 와 footer */
@@ -15,7 +15,7 @@
 #footer {
     width: 100%;
 }
-#visual{
+#visual {
 }
 .inner {
     width: 1400px;
@@ -35,7 +35,7 @@
     z-index: 100;
     position: fixed;
 }
-#header.active{
+#header.active {
     height: 230px;
     box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.5);
 }
@@ -67,7 +67,7 @@
 #header .nav .gnb {
     display: flex;
 }
-#header .nav .gnb li{
+#header .nav .gnb li {
     text-align: center;
 }
 #header .nav .gnb li a {
@@ -77,8 +77,8 @@
     position: relative;
     color: #fff;
 }
-#header .nav .gnb li .sub_gnb li a{
-    color: rgba(225,225,225,0.7)
+#header .nav .gnb li .sub_gnb li a {
+    color: rgba(225, 225, 225, 0.7);
 }
 #header .nav .gnb li.on a {
     color: hotpink;
@@ -98,13 +98,13 @@
     transform: scaleX(0);
     transition: 0.3s;
 }
-.sub_gnb{
+.sub_gnb {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.sub_gnb li{
+.sub_gnb li {
     box-sizing: border-box;
     position: relative;
 }
@@ -119,14 +119,31 @@
     flex-direction: column;
     gap: 26px;
 }
-#footer .top-footer{display: flex; justify-content: space-between; position: relative; align-items: center;}
-#footer .top-footer h1{}
-#footer .top-footer .footer-link-wrap{display: flex; gap: 36px; position: absolute; top: 5px; right: 50%; transform: translateX(50%);}
-#footer .top-footer .footer-link-wrap a{font-size: 16px; color: white; position: relative;}
-#footer .top-footer .footer-link-wrap a::after{
+#footer .top-footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+#footer .top-footer h1 {
+}
+#footer .top-footer .footer-link-wrap {
+    display: flex;
+    gap: 36px;
+    position: absolute;
+    top: 5px;
+    right: 50%;
+    transform: translateX(50%);
+}
+#footer .top-footer .footer-link-wrap a {
+    font-size: 16px;
+    color: white;
+    position: relative;
+}
+#footer .top-footer .footer-link-wrap a::after {
     content: '';
     display: block;
-    width: 1px; 
+    width: 1px;
     height: 20px;
     background-color: white;
     display: inline-block;
@@ -134,48 +151,65 @@
     top: 0;
     right: -18px;
 }
-#footer .top-footer .footer-link-wrap a:last-child::after{display: none;}
-#footer .top-footer .footer-logo-wrap{display: flex; gap: 28px;}
-#footer .top-footer .footer-logo-wrap a i{font-size: 32px; color: white;}
-#footer .bottom-footer{display: flex; justify-content: space-between; position: relative;}
-#footer .bottom-footer .mark{}
-#footer .bottom-footer .footer-txt-wrap{
-    color: rgba(255,255,255,0.5); 
-    font-size: 15px; 
+#footer .top-footer .footer-link-wrap a:last-child::after {
+    display: none;
+}
+#footer .top-footer .footer-logo-wrap {
+    display: flex;
+    gap: 28px;
+}
+#footer .top-footer .footer-logo-wrap a i {
+    font-size: 32px;
+    color: white;
+}
+#footer .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#footer .bottom-footer .mark {
+}
+#footer .bottom-footer .footer-txt-wrap {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
     gap: 18px;
     position: absolute;
     top: 0;
     right: 50%;
     transform: translateX(60%);
 }
-#footer .bottom-footer .footer-txt-wrap .footer-txt-wrap-top{
-    display: flex; 
+#footer .bottom-footer .footer-txt-wrap .footer-txt-wrap-top {
+    display: flex;
 }
-#footer .bottom-footer .footer-txt-wrap p{
+#footer .bottom-footer .footer-txt-wrap p {
     margin-top: 18px;
 }
-#footer .bottom-footer .footer-txt-wrap span{white-space: nowrap;}
-#footer .bottom-footer select{
-  width: 215px;
-  height: 45px;
-  background: url('https://freepikpsd.com/media/2019/10/down-arrow-icon-png-7-Transparent-Images.png') calc(100% - 5px) center no-repeat;
-  background-size: 20px;
-  padding: 5px 30px 5px 10px;
-  border-radius: 4px;
-  outline: 0 none;
-  color: white;
+#footer .bottom-footer .footer-txt-wrap span {
+    white-space: nowrap;
+}
+#footer .bottom-footer select {
+    width: 215px;
+    height: 45px;
+    background: url('https://freepikpsd.com/media/2019/10/down-arrow-icon-png-7-Transparent-Images.png')
+        calc(100% - 5px) center no-repeat;
+    background-size: 20px;
+    padding: 5px 30px 5px 10px;
+    border-radius: 4px;
+    outline: 0 none;
+    color: white;
 }
 select option {
-  background: black;
-  color: #fff;
-  padding: 3px 0;
+    background: black;
+    color: #fff;
+    padding: 3px 0;
 }
-#footer .bottom-footer select option{}
+#footer .bottom-footer select option {
+}
 /* //공용 footer */
 
 /* 서브페이지공통 */
 #subVisual {
-    height: 350px;
+    height: 450px;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
@@ -183,36 +217,160 @@ select option {
     justify-content: center;
     align-items: center;
 }
-#subVisual.banner1 {
-    background-image: url(../images/subVisual1.png);
-}
-#subVisual.banner2 {
-    background-image: url(../images/subVisual2.png);
-}
-#subVisual.banner3 {
-    background-image: url(../images/subVisual3.png);
-}
-#subVisual.banner4 {
-    background-image: url(../images/subVisual4.png);
-}
-#subVisual.banner5 {
-    background-image: url(../images/subVisual5.png);
-}
-#subVisual.banner6 {
-    background-image: url(../images/subVisual6.png);
-}
 #subVisual h2 {
     font-size: 50px;
     font-weight: 700;
+    color: #000;
+    position: relative;
+    text-align: center;
+}
+#subVisual h2::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 40px;
+    background: #c4c4c4;
+    opacity: 0.5;
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translate(50%);
+}
+#subVisual .location {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+#subVisual .location li {
+    font-size: 17px;
+}
+#subVisual .location li.on {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+#subVisual .location li::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background-image: url(../images/sub_images/next.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+#subVisual .location li:last-child::after {
+    display: none;
+}
+#subVisual .location li a {
+    color: #000;
+}
+#subVisual .location li a img {
+    transform: translateY(45%);
+}
+#subVisual .share {
+    display: flex;
+    /* justify-content: end; */
+    transform: translateY(-100%);
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+#subVisual .share li {
+    margin-right: 35px;
+}
+#subVisual .share li {
+}
+#subVisual .share li img {
 }
 
 .page {
 }
-.page .inner {
-    padding: 120px 0;
-}
+/* .page .inner {
+  padding: 120px 0;
+} */
 .page h3 {
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 40px;
+}
+
+/* 공유버튼 누르면 펼처짐*/
+#subVisual .share {
+}
+
+.sns_wrap {
+    display: none;
+    position: absolute;
+    right: 90px;
+    top: -4px;
+    width: auto;
+    text-align: right;
+    background-color: #000;
+    border-radius: 40px;
+    padding: 6px 44px 6px 15px;
+    height: 42px;
+    min-width: 330px;
+}
+#subVisual .share .sns_wrap .sns_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+#subVisual .share .sns_wrap .sns_inner button {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    margin-bottom: 7px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#subVisual .share .sns_wrap .sns_inner .sns_close {
+    background-color: #fff;
+    background-size: 14px 14px;
+    background-image: url(/images/common/utlie_sns2.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+}
+#subVisual .share .sns_wrap .sns_inner .sns_copy {
+    background-image: url(/images/common/utlie_sns3.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 23px 23px;
+}
+#subVisual .share .sns_wrap .sns_inner .sns_facebook {
+    background-image: url(/images/common/utlie_sns4.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 23px 23px;
+}
+#subVisual .share .sns_wrap .sns_inner .sns_twitter {
+    background-image: url(/images/common/utlie_sns5.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 23px 23px;
+}
+#subVisual .share .sns_wrap .sns_inner .sns_blog {
+    background-image: url(/images/common/utlie_sns6.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 23px 23px;
+}
+#subVisual .share .sns_wrap .sns_inner .sns_band {
+    background-image: url(/images/common/utlie_sns7.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 23px 23px;
+}
+#subVisual .share .sns_wrap .sns_inner .sns_kakao {
+    background-image: url(/images/common/utlie_sns1.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 23px 23px;
 }

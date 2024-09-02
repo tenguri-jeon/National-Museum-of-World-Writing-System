@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
         <meta charset="UTF-8" />
-        <title>Document</title>
+        <title>회원가입</title>
         <meta name="title" content="" />
         <meta name="robots" content="index,follow" />
         <meta name="keywords" content="" />
@@ -20,52 +20,87 @@
 
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-</head>
-<body>
-    <section id="join_Membership">
-        <div class="join_Membershipbox join">
-            <div class="login-wrap">
-                <div>
-                    <h1><a href="#"><img src="images/NMWWS_logo_black.png" alt=""></a></h1>
-                    <h2>회원가입</h2>
-                </div>
-                <form>
-                    <input type="text" id="makeID" placeholder="새로운 ID를 입력해 주세요"> <button class="checkID">ID 확인</button>
-
-                    <input type="password" id="newpassword" placeholder="새로운 비밀번호를 입력 해 주세요">
-                    <input type="password" id="checkpassword" placeholder="비밀번호 확인">
-
-                    <input type="text" class="name" placeholder="이름">
-                    <input type="text" class="phonenum" placeholder="전화번호">
-                    <input type="text" class="e-mail" placeholder="이메일">
-                    <div class="input-box">
-                        <ul id="identyGender-wrap">
-                            <li>
-                                <input type="radio" id="identyGender1" name="identyGender" value="Man" class="blind" checked>
-                                <label for="identyGender1">남자</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="identyGender2" name="identyGender" value="Female" class="blind">
-                                <label for="identyGender2">여자</label>
-                            </li>
-                        </ul>
-                        <ul id="identyforeign-wrap">
-                            <li>
-                                <input type="radio" id="identyforeign1" name="identyforeign" value="Man" class="blind" checked>
-                                <label for="identyforeign1">내국인</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="identyforeign2" name="identyforeign" value="Man" class="blind">
-                                <label for="identyforeign2">외국인</label>
-                            </li>
-                        </ul>
+    </head>
+    <body>
+        <section id="join_Membership">
+            <div class="join_Membershipbox join">
+                <div class="login-wrap">
+                    <div>
+                        <h1>
+                            <a href="/main.html"
+                                ><img src="images/main/NMWWS_logo_black.png" alt=""
+                            /></a>
+                        </h1>
+                        <h2>회원가입</h2>
                     </div>
-                    <input type="text" placeholder="이메일">
+                    <form>
+                        <input type="text" id="makeID" placeholder="새로운 ID를 입력해 주세요" />
+                        <button class="checkID">ID 확인</button>
 
-                    <button type="submit">회원가입</button>
-                </form>
+                        <input
+                            type="password"
+                            id="newpassword"
+                            placeholder="새로운 비밀번호를 입력 해 주세요"
+                        />
+                        <input type="password" id="checkpassword" placeholder="비밀번호 확인" />
+
+                        <input type="text" class="name" placeholder="이름" />
+                        <input type="text" class="phonenum" placeholder="전화번호" />
+                        <input type="text" class="e-mail" placeholder="이메일" />
+                        <div class="input-box">
+                            <ul id="identyGender-wrap">
+                                <li>
+                                    <input
+                                        type="radio"
+                                        id="identyGender1"
+                                        name="identyGender"
+                                        value="Man"
+                                        class="blind"
+                                        checked
+                                    />
+                                    <label for="identyGender1">남자</label>
+                                </li>
+                                <li>
+                                    <input
+                                        type="radio"
+                                        id="identyGender2"
+                                        name="identyGender"
+                                        value="Female"
+                                        class="blind"
+                                    />
+                                    <label for="identyGender2">여자</label>
+                                </li>
+                            </ul>
+                            <ul id="identyforeign-wrap">
+                                <li>
+                                    <input
+                                        type="radio"
+                                        id="identyforeign1"
+                                        name="identyforeign"
+                                        value="Man"
+                                        class="blind"
+                                        checked
+                                    />
+                                    <label for="identyforeign1">내국인</label>
+                                </li>
+                                <li>
+                                    <input
+                                        type="radio"
+                                        id="identyforeign2"
+                                        name="identyforeign"
+                                        value="Man"
+                                        class="blind"
+                                    />
+                                    <label for="identyforeign2">외국인</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <input type="text" placeholder="이메일" />
+
+                        <button type="submit">회원가입</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
-</body>
+        </section>
+    </body>
 </html>

@@ -8,7 +8,7 @@ const preventDefaultAnchor = () => {
     });
 };
 
-// °øÅëÀ¸·Î µé¾î°¡´Â ³»¿ëÀ» ¼º°İº°·Î ÇÔ¼ö·Î ¸¸µé±â
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½î°¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½İºï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 const navi = () => {
     let header = get('#header');
     let nav = get('#header .nav');
@@ -16,7 +16,7 @@ const navi = () => {
         header.classList.add('active');
     });
     nav.addEventListener('mouseleave', (e) => {
-    header.classList.remove('active');
+        header.classList.remove('active');
     });
 };
 const familySite = () => {};
@@ -45,3 +45,30 @@ const comInit = () => {
     preventDefaultAnchor();
     comInit();
 })();
+
+//ìœ í‹¸ ê³µìœ ë²„íŠ¼ ëˆ„ë¥´ë©´ í¼ì³ì§€ê²Œ
+
+const sns = document.querySelector('#subVisual .share .sns_wrap');
+const share = document.querySelector('#subVisual .share img');
+const close = document.querySelector('#subVisual .share .sns_wrap .sns_inner .sns_close');
+const copy = document.querySelector('#subVisual .share .sns_wrap .sns_inner .sns_copy');
+
+share.addEventListener('click', (e) => {
+    sns.style.display = 'block';
+});
+
+close.addEventListener('click', (e) => {
+    sns.style.display = 'none';
+});
+
+function clip() {
+    var url = '';
+    var textarea = document.createElement('textarea');
+    document.body.appendChild(textarea);
+    url = window.document.location.href;
+    textarea.value = url;
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    alert('URLì´ ë³µì‚¬ë˜ì—ˆìŠµë‹ˆë‹¤.');
+}

@@ -1,13 +1,13 @@
-:root{
-    --gray : #E6E6E6;
+:root {
+    --gray: #e6e6e6;
 }
-#join_Membership{
-    background: url(../images/join_Membership_bg.png) no-repeat center / cover;
+#join_Membership {
+    background: url(../images/main/join_Membership_bg.png) no-repeat center / cover;
     width: 100vw;
     height: 100vh;
     position: relative;
 }
-.join_Membershipbox{
+.join_Membershipbox {
     position: absolute;
     top: 50%;
     right: 50%;
@@ -15,98 +15,165 @@
     background: #fff;
     padding: 5vw 3.3333vw;
 }
-.login .login-wrap{
+.login .login-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.login .login-wrap form{
+.login .login-wrap form {
     display: flex;
     flex-direction: column;
     margin-top: 3.3333vw;
 }
-.login .login-wrap form{}
-.login-wrap form input{
+.login .login-wrap form {
+}
+.login-wrap form input {
     border-radius: 0.5208vw;
     width: 22.9167vw;
     height: 3.6458vw;
-    padding: 1.2500vw 1.8750vw;
+    padding: 1.25vw 1.875vw;
     border: 0.0521vw solid var(--gray);
 }
-.login .login-wrap form input:nth-child(1){
+.login .login-wrap form input:nth-child(1) {
     margin-bottom: 0.9375vw;
 }
-.login .login-wrap form .link_wrap::before{
+.login .login-wrap form .link_wrap::before {
     content: '';
     height: 0.0521vw;
     width: 100%;
     display: block;
-    background: #E7E7E7;
+    background: #e7e7e7;
     position: absolute;
     top: 1.3542vw;
     right: 0;
 }
-.login .login-wrap form .link_wrap{
+.login .login-wrap form .link_wrap {
     position: relative;
     display: flex;
     justify-content: center;
     gap: 2.6042vw;
-    padding-top: 2.8125vw
+    padding-top: 2.8125vw;
 }
-.login .login-wrap form .link_wrap a{ color: #4F4F4F; position: relative;}
-.login .login-wrap form .link_wrap a::after{ 
+.login .login-wrap form .link_wrap a {
+    color: #4f4f4f;
+    position: relative;
+}
+.login .login-wrap form .link_wrap a::after {
     content: '';
     height: 0.9375vw;
     width: 0.0521vw;
     display: block;
-    background: #E7E7E7;
+    background: #e7e7e7;
     position: absolute;
     top: 0.2604vw;
-    right: -1.3021vw
+    right: -1.3021vw;
 }
-.login .login-wrap form .link_wrap a:last-child::after{
+.login .login-wrap form .link_wrap a:last-child::after {
     display: none;
 }
-.login .login-wrap form button{
+.login .login-wrap form button {
     background-color: #000;
     color: white;
-    padding: 1.0417vw 6.8750vw;
+    padding: 1.0417vw 6.875vw;
     border-radius: 0.4167vw;
     border: none;
-    margin-top: 2.8646vw
+    margin-top: 2.8646vw;
+    cursor: pointer;
 }
 
 /*회원가입 페이지*/
-.join .login-wrap:nth-child(1) div h1{display: inline;}
-.join .login-wrap:nth-child(1) div h2{display: inline; float: right; font-size: 1.6667vw; font-weight: 700;}
-.join .login-wrap:nth-child(1) form{margin-top: 2.8646vw;}
-.join .login-wrap:nth-child(1) form .checkID{padding: 1.0938vw 2.3438vw; border: none; background: black; color: white; border-radius: 0.4167vw; margin-left: 1.1458vw;} 
-.join .login-wrap form input{width: 100%;}
-.join .login-wrap:nth-child(1) form #makeID{width: 77%;}
-.join .login-wrap:nth-child(1) form #newpassword {margin-top: 0.9375vw; border-radius: 0.4167vw 0.4167vw 0px 0px;}
-.join .login-wrap:nth-child(1) form #checkpassword {border-radius: 0px 0px 0.4167vw 0.4167vw; }
-.join .login-wrap:nth-child(1) form .name{margin-top: 0.9375vw; border-radius: 0.4167vw 0.4167vw 0px 0px;}
-.join .login-wrap:nth-child(1) form .phonenum{border-radius: 0;}
-.join .login-wrap:nth-child(1) form .email{margin-top: 0.9375vw; border-radius: 0px 0px 0px 0px;}
-.join .login-wrap:nth-child(1) form input:nth-child(9){border-radius: 0px 0px 0.4167vw 0.4167vw;}
-.join .login-wrap:nth-child(1) form ul li input.blind{display: none;}
-.join .login-wrap:nth-child(1) #identyGender-wrap{flex-basis: 50%; justify-content: center; align-content: center; height: 2.2917vw;}
-.join .login-wrap:nth-child(1) #identyGender-wrap li{align-content: center; text-align: center;}
-.join .login-wrap:nth-child(1) #identyforeign-wrap{flex-basis: 50%; justify-content: center; align-content: center; height: 2.2917vw;}
-.join .login-wrap:nth-child(1) #identyforeign-wrap li{align-content: center; text-align: center;}
-.join .login-wrap:nth-child(1) ul li{flex-basis: 50%;}
-.join .login-wrap:nth-child(1) #identyforeign{flex-basis: 50%; border: 1px solid var(--gray); border-radius: 0.4167vw;}
-.join .login-wrap:nth-child(1) form .input-box{    
+.join .login-wrap:nth-child(1) div h1 {
+    display: inline;
+}
+.join .login-wrap:nth-child(1) div h2 {
+    display: inline;
+    float: right;
+    font-size: 1.6667vw;
+    font-weight: 700;
+}
+.join .login-wrap:nth-child(1) form {
+    margin-top: 2.8646vw;
+}
+.join .login-wrap:nth-child(1) form .checkID {
+    padding: 1.0938vw 2.3438vw;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 0.4167vw;
+    margin-left: 1.1458vw;
+    cursor: pointer;
+}
+.join .login-wrap form input {
+    width: 100%;
+}
+.join .login-wrap:nth-child(1) form #makeID {
+    width: 77%;
+}
+.join .login-wrap:nth-child(1) form #newpassword {
+    margin-top: 0.9375vw;
+    border-radius: 0.4167vw 0.4167vw 0px 0px;
+}
+.join .login-wrap:nth-child(1) form #checkpassword {
+    border-radius: 0px 0px 0.4167vw 0.4167vw;
+}
+.join .login-wrap:nth-child(1) form .name {
+    margin-top: 0.9375vw;
+    border-radius: 0.4167vw 0.4167vw 0px 0px;
+}
+.join .login-wrap:nth-child(1) form .phonenum {
+    border-radius: 0;
+}
+.join .login-wrap:nth-child(1) form .email {
+    margin-top: 0.9375vw;
+    border-radius: 0px 0px 0px 0px;
+}
+.join .login-wrap:nth-child(1) form input:nth-child(9) {
+    border-radius: 0px 0px 0.4167vw 0.4167vw;
+}
+.join .login-wrap:nth-child(1) form ul li input.blind {
+    display: none;
+}
+.join .login-wrap:nth-child(1) #identyGender-wrap {
+    flex-basis: 50%;
+    justify-content: center;
+    align-content: center;
+    height: 2.2917vw;
+}
+.join .login-wrap:nth-child(1) #identyGender-wrap li {
+    align-content: center;
+    text-align: center;
+}
+.join .login-wrap:nth-child(1) #identyforeign-wrap {
+    flex-basis: 50%;
+    justify-content: center;
+    align-content: center;
+    height: 2.2917vw;
+}
+.join .login-wrap:nth-child(1) #identyforeign-wrap li {
+    align-content: center;
+    text-align: center;
+}
+.join .login-wrap:nth-child(1) ul li {
+    flex-basis: 50%;
+}
+.join .login-wrap:nth-child(1) #identyforeign {
+    flex-basis: 50%;
+    border: 1px solid var(--gray);
+    border-radius: 0.4167vw;
+}
+.join .login-wrap:nth-child(1) form .input-box {
     display: flex;
     height: 3.6458vw;
-    padding: 0.6250vw 1.1458vw;
+    padding: 0.625vw 1.1458vw;
     border: 0.0521vw solid var(--gray);
     gap: 1.25vw;
     height: 3.5938vw;
     box-sizing: border-box;
 }
-.join .login-wrap:nth-child(1) form .input-box ul{display: flex;}
-.join .login-wrap:nth-child(1) form button[type = "submit"]::after{
+.join .login-wrap:nth-child(1) form .input-box ul {
+    display: flex;
+}
+.join .login-wrap:nth-child(1) form button[type='submit']::after {
     content: '';
     display: block;
     height: 1px;
@@ -116,28 +183,30 @@
     top: -2.3438vw;
     right: 0;
     transform: translateX(10.8333vw);
+    cursor: pointer;
 }
-.join .login-wrap:nth-child(1) form button[type = "submit"]{
+.join .login-wrap:nth-child(1) form button[type='submit'] {
     background-color: #000;
     color: white;
-    padding:  1.0417vw 6.5625vw;
+    padding: 1.0417vw 6.5625vw;
     border-radius: 0.4167vw;
     border: none;
     margin: 0 auto;
     margin-top: 4.6875vw;
     display: block;
     position: relative;
+    cursor: pointer;
 }
 
-.join label{
+.join label {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-  
+
 /* 체크박스 디자인 */
-.join label::before{
-    content:'';
+.join label::before {
+    content: '';
     display: block;
     margin-right: 0.2604vw;
     display: inline-block;
@@ -145,24 +214,24 @@
     height: 2.2917vw;
     background-color: transparent;
     border: 1px solid #9da3a5;
-    box-sizing:border-box;
+    box-sizing: border-box;
     position: relative;
     cursor: pointer;
     width: 9.8958vw;
     height: 2.2917vw;
     position: absolute;
-  }
-.join #identyGender-wrap li:first-of-type label::before , 
-.join #identyforeign-wrap li:first-of-type label::before{
+}
+.join #identyGender-wrap li:first-of-type label::before,
+.join #identyforeign-wrap li:first-of-type label::before {
     border-radius: 0.4167vw 0px 0px 0.4167vw;
 }
-.join #identyGender-wrap li:nth-of-type(2) label::before , 
-.join #identyforeign-wrap li:nth-of-type(2) label::before{
+.join #identyGender-wrap li:nth-of-type(2) label::before,
+.join #identyforeign-wrap li:nth-of-type(2) label::before {
     border-radius: 0px 0.4167vw 0.4167vw 0px;
 }
-  
+
 /* checked */
-.join input:checked + label::before{
-    border:1px solid black;
+.join input:checked + label::before {
+    border: 1px solid black;
     color: black;
-  }
+}
